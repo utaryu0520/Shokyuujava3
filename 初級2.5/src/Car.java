@@ -8,10 +8,10 @@ public class Car{
 		this.vy = vy;
 	}
 	public void draw(MyFrame frame) {
-		frame.fillRect(x,y + 10,50,10);
-		frame.fillRect(x + 10,y,25,10);
-		frame.fillOval(x + 4, y + 20, 12, 12);
-		frame.fillOval(x + 24, y + 20, 12, 12);
+		frame.fillRect(x +20, y, 40, 20);
+		frame.fillRect(x, y + 20, 80, 20);
+		frame.fillOval(x + 10, y + 40, 20, 20);
+		frame.fillOval(x + 50, y + 40, 20, 20);
 	}
 	public void move() {
 		x += vx;
