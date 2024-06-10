@@ -7,12 +7,14 @@ public class DisPlayCarsTrains extends MyFrame{
 		vehicles[1] = new Car(10, 100, 5, 0);
 		vehicles[2] = new Train(10, 150, 7, 0);
 		
-		for(int j = 0; j <vehicles.length; j++) {
+	     while(true) {
+		 for(int j = 0; j < vehicles.length; j++) {
 			clear();
 			vehicles[j].draw(this);
 			vehicles[j].move();
 		}
 		
 		sleep(0.1);
+		}
 	}
 }
