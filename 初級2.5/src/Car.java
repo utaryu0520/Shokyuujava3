@@ -31,12 +31,19 @@ public class Car extends Vehicle implements KeyListener{
 		if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
 			x += 5;
 		}
+		if(e.getKeyCode() == KeyEvent.VK_UP) {
+			y -= 5;
+		}
+		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+			y += 5;
+		}
 	}
 
 	//キーが離れたとき
 	@Override
 	public void keyReleased(KeyEvent e) {
 		// TODO 自動生成されたメソッド・スタブ
-		x = 0;
+		x = 100;
+		y = 200;
 	}
 }
